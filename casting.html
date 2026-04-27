@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿QUÉ CREÍAS? | El Concurso de IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="recursos/favicon.png">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="recursos/cabeza.png" alt="Logo ¿QUÉ CREÍAS?" class="logo-img">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="casting.html">Casting</a></li>
+                <li><a href="clips.html">Clips</a></li>
+                <li><a href="participantes.html">Participantes</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-casting">
+        <section class="casting-header">
+            <h1>ÚNETE AL DESAFÍO</h1>
+            <p>¿Crees que puedes engañar a nuestra IA o que tus ojos detectan cada píxel falso? Demuéstralo.</p>
+        </section>
+
+        <section class="form-section">
+            <form id="castingForm">
+                <div class="input-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre artístico o real" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email de contacto</label>
+                    <input type="email" id="email" name="email" placeholder="humano@ejemplo.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="talento">¿Cuál es tu especialidad?</label>
+                    <select id="talento" name="talento">
+                        <option value="prompt">Prompt Engineering</option>
+                        <option value="arte">Arte Digital</option>
+                        <option value="detective">Detective de Deepfakes</option>
+                        <option value="otro">Otro (Sorpréndenos)</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="video">Enlace a tu vídeo de presentación (YouTube/Vimeo)</label>
+                    <input type="url" id="video" name="video" placeholder="https://...">
+                </div>
+
+                <div class="input-group">
+                    <label for="mensaje">¿Por qué deberías estar en "¿QUÉ CREÍAS?"?</label>
+                    <textarea id="mensaje" rows="4" placeholder="Cuéntanos tu secreto..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-main">ENVIAR SOLICITUD</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ¿QUÉ CREÍAS? - No aceptamos robots (por ahora).</p>
+    </footer>
+
+</body>
+</html>
