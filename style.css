@@ -684,3 +684,73 @@ footer {
     max-width: 600px;
     margin: 0 auto 40px auto;
 }
+
+/* =========================================
+   OPERACIÓN RESCATE MÓVIL
+   Todo lo que esté aquí dentro solo se aplica a pantallas pequeñas
+   ========================================= */
+
+@media (max-width: 768px) {
+    
+    /* 1. Menú: Que los enlaces no se peleen por el espacio */
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    /* 2. Textos e imágenes gigantes: A dieta */
+    .hero-content h1 {
+        font-size: 2.5rem; /* Menos gritos en la pantalla principal */
+    }
+    
+    .hero-image {
+        width: 80%; /* Para que tu logo central no se salga de los bordes */
+    }
+
+    .hero-content::before {
+        width: 250px; /* Reducimos el aura para que no rompa el ancho */
+        height: 180px;
+    }
+
+    .section-title h1 {
+        font-size: 2rem;
+    }
+
+    /* 3. Márgenes: El móvil necesita respirar */
+    #proyecto {
+        padding: 50px 5%; /* Quitamos ese 15% de espacio vacío a los lados */
+    }
+
+    .container, .container-casting {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    /* 4. Formularios y Tarjetas: Que ocupen el ancho completo */
+    .form-section {
+        padding: 25px 15px;
+    }
+
+    .user-card, .clip-card {
+        margin: 0 10px;
+    }
+
+    /* 5. El error 404: Para que el código no necesite scroll horizontal */
+    .error-code {
+        font-size: 5rem;
+    }
+    
+    .error-content {
+        padding: 30px 20px;
+    }
+}
